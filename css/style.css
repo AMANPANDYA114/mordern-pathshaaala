@@ -178,7 +178,7 @@ button:focus {
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
       /* old color b- #7b838a */
-    background: #7b838a;
+    background: #002347;
     padding: 0px;
     border: 0px;
     border-radius: 0px; }
@@ -3043,7 +3043,7 @@ h6 {
 
   .header_area .navbar {
     /* old color b- #7b838a */
-    background: #7b838a; }
+    background: #002347; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
