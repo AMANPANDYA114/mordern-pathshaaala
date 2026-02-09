@@ -280,46 +280,39 @@ button:focus {
     .header_area.white-header.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link, .header_area.white-header.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link {
       color: #fdc632; }
 
+      
 #search_input_box {
-  background: #fdc632;
-  text-align: center;
-  padding: 5px 20px; }
-  #search_input_box .form-control {
-    padding-left: 0;
-    background: transparent;
-    border: 0;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 18px; }
-    #search_input_box .form-control:focus {
-      box-shadow: none;
-      outline: none; }
-  #search_input_box input.placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box input:-moz-placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box input::-moz-placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box input::-webkit-input-placeholder {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: normal; }
-  #search_input_box .btn {
-    width: 0;
-    height: 0;
-    padding: 0;
-    border: 0; }
-  #search_input_box #close_search {
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 10px 0; }
+  background: transparent !important;
+  padding: 0;
+}
+
+/* Input text */
+#search_input_box .form-control {
+  background: transparent !important;
+  border: 0 !important;
+  color: transparent !important;
+  caret-color: transparent !important; /* hides cursor */
+  box-shadow: none !important;
+}
+
+/* Placeholder – ALL browsers */
+#search_input_box input::placeholder,
+#search_input_box input::-webkit-input-placeholder,
+#search_input_box input::-moz-placeholder,
+#search_input_box input:-ms-input-placeholder,
+#search_input_box input:-moz-placeholder {
+  color: transparent !important;
+}
+
+/* Buttons */
+#search_input_box .btn {
+  display: none !important;
+}
+
+/* Close icon / text */
+#search_input_box #close_search {
+  display: none !important;
+}
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -2557,6 +2550,26 @@ h6 {
 
 .confirm-switch input:checked + label:before {
   background: #4cd3e3; }
+
+
+   .logo-responsive {
+    max-width: 110px;
+    height: auto;
+  }
+
+  /* Tablet */
+  @media (min-width: 768px) {
+    .logo-responsive {
+      max-width: 130px;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 992px) {
+    .logo-responsive {
+      max-width: 130px;
+    }
+  }
 
 .primary-checkbox {
   width: 16px;
