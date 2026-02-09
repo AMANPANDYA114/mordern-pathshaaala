@@ -150,6 +150,22 @@ button:focus {
   content: "";
   z-index: -1; }
 
+
+  /* Welcome to */
+.welcome-text {
+  color: white; /* dark navy blue */
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+
+/* Modern पाठशाला (brand highlight) */
+.brand-highlight {
+  color: #fdc632;
+  font-weight: 800;
+}
+
+
 /* End Overlay css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -161,6 +177,7 @@ button:focus {
   z-index: 99;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
+      /* old color b- #7b838a */
     background: #7b838a;
     padding: 0px;
     border: 0px;
@@ -323,7 +340,7 @@ button:focus {
   z-index: 1;
   min-height: 900px;
   position: relative;
-  background: url(../img/banner/home-banner.jpg) no-repeat center;
+  background: url(../img/student-poster.png) no-repeat center;
   background-size: cover; }
   .home_banner_area .banner_inner {
     position: absolute;
@@ -439,7 +456,10 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Start About Area css
+ 
 ============================================================================================ */
+
+
 .h_blog_item .col-lg-6 {
   vertical-align: middle;
   align-self: center; }
@@ -3022,6 +3042,7 @@ h6 {
     position: absolute; }
 
   .header_area .navbar {
+    /* old color b- #7b838a */
     background: #7b838a; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
@@ -3178,11 +3199,22 @@ h6 {
     text-align: center;
     margin-top: 15px; }
 
+ @media (max-width: 991.98px) { /* Tablet and below */
+    .mobile-img {
+      height: 270px; /* Slightly taller than 180px to prevent cut-off */
+    }
+  }
+  @media (max-width: 575.98px) { /* Mobile */
+    .mobile-img {
+      height: 280px; /* Even taller on small screens */
+    }
+  }
   /* End End Footer Area css
 	============================================================================================ */ }
 @media (max-width: 575px) {
   .top_menu {
     display: none; }
+  
 
   .header_area + section,
   .header_area + row,
